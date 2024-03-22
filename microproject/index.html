@@ -1,0 +1,120 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url(bgimage.jpeg);
+  background-size: 100%;
+  margin-left: 0%;
+  padding-left: 0%;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+
+.home_page {
+  width: 55%;
+  padding-left: 0%;
+  padding-bottom: 0%;
+  margin:0;
+  margin-left: 0%;
+  margin-right: 50%;
+  background-color: rgb(192, 192, 197);
+  color: white;
+  border-radius: 10px;
+  height: 800px;
+}
+
+.topnav {
+  overflow:scroll;
+  background-color: #767376;
+  position: relative;
+  border-style: double;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 40px 30px;
+  text-decoration:none;
+  font-size: 20px;
+  display: flex;
+}
+a{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.topnav a.icon {
+  background: rgb(80, 80, 80);
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #cecece;
+  color: rgb(0, 0, 0);
+}
+
+.active {
+  background-color: rgb(11, 11, 11);
+  color: rgb(38, 35, 35);
+}
+h3{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+img{
+  width: 400px;
+      height: 350px;
+      justify-content:center;
+      position: absolute;
+      top:45%;
+      left: 10%;
+}
+</style>
+</head>
+<body>
+<div class="home_page">
+<div class="topnav">
+  <a href="#home" class="active">Welcome to my E-Portfolio</a>
+  <div id="myLinks">
+        <a href="personal.html"><i class="fa-solid fa-user"  style="color: #094a79;"></i>  Personal Info</a>
+        <a href="experience.html"><i class="fa-solid fa-briefcase" style="color: #08ab72;"></i> Working Experience</a>
+        <a href="education.html"><i class="fa-solid fa-book"  style="color: #903227;"></i> Education</a>
+        <a href="skills.html"><i class="fa-solid fa-snowflake" style="color: #9ce0f1;"></i>  Special Skills</a>
+        <a href="interests.html"><i class="fa-solid fa-heart" style="color: #f00a38;"></i> Interests</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div><br><br>
+<p> <h3 style="color: rgb(0, 0, 0); text-align: center; font-style: italic;" ><em>You are welcome to explore my profile</em></h3></p>
+<img src="welcome.jpeg">
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+</script>
+<footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+    <p>Contact: karthik@mail.com</p>
+</footer>
+</body>
+</html>
